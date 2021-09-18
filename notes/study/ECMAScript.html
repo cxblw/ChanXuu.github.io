@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ECMAScript | ChanXuu Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="人可自信,但不可自负">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.9874bcfc.css" as="style"><link rel="preload" href="/assets/js/app.4c159413.js" as="script"><link rel="preload" href="/assets/js/3.608df269.js" as="script"><link rel="preload" href="/assets/js/1.13c8fc19.js" as="script"><link rel="preload" href="/assets/js/13.88ee9177.js" as="script"><link rel="prefetch" href="/assets/js/10.726484ba.js"><link rel="prefetch" href="/assets/js/11.74586423.js"><link rel="prefetch" href="/assets/js/12.3349f9ca.js"><link rel="prefetch" href="/assets/js/14.81f64d94.js"><link rel="prefetch" href="/assets/js/15.17db9ef8.js"><link rel="prefetch" href="/assets/js/16.0c7697fc.js"><link rel="prefetch" href="/assets/js/17.cff91d4a.js"><link rel="prefetch" href="/assets/js/18.e01313f2.js"><link rel="prefetch" href="/assets/js/19.2b435f46.js"><link rel="prefetch" href="/assets/js/20.db7c7246.js"><link rel="prefetch" href="/assets/js/21.acf51e8f.js"><link rel="prefetch" href="/assets/js/22.107cd52d.js"><link rel="prefetch" href="/assets/js/23.94e9092d.js"><link rel="prefetch" href="/assets/js/24.d4e97616.js"><link rel="prefetch" href="/assets/js/25.62deddd2.js"><link rel="prefetch" href="/assets/js/26.cd28c770.js"><link rel="prefetch" href="/assets/js/27.1320cc1d.js"><link rel="prefetch" href="/assets/js/28.03da4296.js"><link rel="prefetch" href="/assets/js/4.27676539.js"><link rel="prefetch" href="/assets/js/5.2a79bc28.js"><link rel="prefetch" href="/assets/js/6.eb5bb7b9.js"><link rel="prefetch" href="/assets/js/7.ec4c20de.js"><link rel="prefetch" href="/assets/js/8.4dc3512e.js"><link rel="prefetch" href="/assets/js/9.110776e2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9874bcfc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-5c9abedb><div data-v-5c9abedb><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-5c9abedb data-v-5c9abedb><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-58d5ab76 data-v-5c9abedb data-v-5c9abedb><h3 class="title" style="display:none;" data-v-58d5ab76 data-v-58d5ab76>ChanXuu Blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><input type="password" value="" data-v-58d5ab76> <span data-v-58d5ab76>Konck! Knock!</span> <button data-v-58d5ab76>OK</button></label> <div class="footer" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><span data-v-58d5ab76><i class="iconfont reco-theme" data-v-58d5ab76></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-58d5ab76>vuePress-theme-reco</a></span> <span data-v-58d5ab76><i class="iconfont reco-copyright" data-v-58d5ab76></i> <a data-v-58d5ab76><span data-v-58d5ab76>ChanXuu</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-5c9abedb><header class="navbar" data-v-5c9abedb><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="ChanXuu Blog" class="logo"> <span class="site-name">ChanXuu Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      类别
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javascript/" class="nav-link"><i class="iconfont undefined"></i>
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/postcss/" class="nav-link"><i class="iconfont undefined"></i>
+  postcss
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/jenkins/" class="nav-link"><i class="iconfont undefined"></i>
+  jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/categories/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gzip/" class="nav-link"><i class="iconfont undefined"></i>
+  Gzip
+</a></li><li class="dropdown-item"><!----> <a href="/categories/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vscode/" class="nav-link"><i class="iconfont undefined"></i>
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/categories/谷歌地图/" class="nav-link"><i class="iconfont undefined"></i>
+  谷歌地图
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/categories/js库/" class="nav-link"><i class="iconfont undefined"></i>
+  js库
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/notes/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  学习笔记
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/ChanXuu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://chanxuu.gitee.io/blog/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-gitee"></i>
+  Gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5c9abedb></div> <aside class="sidebar" data-v-5c9abedb><div class="personal-info-wrapper" data-v-02b5d880><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-02b5d880> <h3 class="name" data-v-02b5d880>
+    ChanXuu
+  </h3> <div class="num" data-v-02b5d880><div data-v-02b5d880><h3 data-v-02b5d880>16</h3> <h6 data-v-02b5d880>文章</h6></div> <div data-v-02b5d880><h3 data-v-02b5d880>13</h3> <h6 data-v-02b5d880>标签</h6></div></div> <hr data-v-02b5d880></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      类别
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/javascript/" class="nav-link"><i class="iconfont undefined"></i>
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/postcss/" class="nav-link"><i class="iconfont undefined"></i>
+  postcss
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/jenkins/" class="nav-link"><i class="iconfont undefined"></i>
+  jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/categories/nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Gzip/" class="nav-link"><i class="iconfont undefined"></i>
+  Gzip
+</a></li><li class="dropdown-item"><!----> <a href="/categories/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vscode/" class="nav-link"><i class="iconfont undefined"></i>
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/categories/谷歌地图/" class="nav-link"><i class="iconfont undefined"></i>
+  谷歌地图
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/categories/js库/" class="nav-link"><i class="iconfont undefined"></i>
+  js库
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/notes/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  学习笔记
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/ChanXuu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://chanxuu.gitee.io/blog/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-gitee"></i>
+  Gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>学习笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/study/常用函数.html" class="sidebar-link">常用函数</a></li><li><a href="/notes/study/ECMAScript.html" class="active sidebar-link">ECMAScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es6" class="sidebar-link">ES6</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#let，const与var的区别" class="sidebar-link">let，const与var的区别</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#数组的解构" class="sidebar-link">数组的解构</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#对象的解构" class="sidebar-link">对象的解构</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#模板字符串" class="sidebar-link">模板字符串</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#object-keys" class="sidebar-link">Object.keys</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-foreach" class="sidebar-link">Array.forEach</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-map" class="sidebar-link">Array.map</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-filter" class="sidebar-link">Array.filter</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-some" class="sidebar-link">Array.some</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-every" class="sidebar-link">Array.every</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-reduce" class="sidebar-link">Array.reduce</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-form" class="sidebar-link">Array.form</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#array-of" class="sidebar-link">Array.of</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#copywithin" class="sidebar-link">copyWithin()</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#对象属性同名简化" class="sidebar-link">对象属性同名简化</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#字符串的扩展方法" class="sidebar-link">字符串的扩展方法</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#参数默认值" class="sidebar-link">参数默认值</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#展开运算符（-）" class="sidebar-link">展开运算符（...）</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#rest运算符（标识剩余参数）" class="sidebar-link">rest运算符（标识剩余参数）</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#箭头函数" class="sidebar-link">箭头函数</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#对象字面量" class="sidebar-link">对象字面量</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#object-assign" class="sidebar-link">Object.assign()</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#find和findindex" class="sidebar-link">find和findIndex</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#for-of-和-for-in" class="sidebar-link">for of 和 for in</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#promise" class="sidebar-link">promise</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#class" class="sidebar-link">Class</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#set" class="sidebar-link">Set()</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#map" class="sidebar-link">Map()</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#for-of" class="sidebar-link">for...of</a></li></ul></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es7" class="sidebar-link">ES7</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_1-数组的includes方法" class="sidebar-link">1.数组的includes方法</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_2-指数运算符" class="sidebar-link">2.指数运算符</a></li></ul></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es8" class="sidebar-link">ES8</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_1-object-values" class="sidebar-link">1.object.values</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_2-object-entries" class="sidebar-link">2.Object.entries</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_3-string方法-填充字符串" class="sidebar-link">3.string方法 填充字符串</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_4-在函数参数中添加尾逗号" class="sidebar-link">4.在函数参数中添加尾逗号</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_5-async-await" class="sidebar-link">5.async/await</a></li></ul></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es9" class="sidebar-link">ES9</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_1-for-await-of-异步迭代器" class="sidebar-link">1.for await of 异步迭代器</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_2-promise-finally" class="sidebar-link">2.Promise.finally</a></li></ul></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es10" class="sidebar-link">ES10</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_1-array-flat" class="sidebar-link">1.Array.flat</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_2-array-flatmap" class="sidebar-link">2.Array.flatMap</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_3-biglnt" class="sidebar-link">3.Biglnt</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_4-object-fromentries" class="sidebar-link">4.Object.fromEntries</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_5-string-trimstart-string-trimend" class="sidebar-link">5.String.trimStart &amp;&amp; String.trimEnd</a></li></ul></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es11" class="sidebar-link">ES11</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_1-promise-allsettled" class="sidebar-link">1.Promise.allSettled</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_2-和-？？" class="sidebar-link">2. ?. 和 ？？</a></li></ul></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#es12" class="sidebar-link">ES12</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_1-promise-any" class="sidebar-link">1.Promise.any</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_2-数字分隔符" class="sidebar-link">2.数字分隔符</a></li><li class="sidebar-sub-header"><a href="/notes/study/ECMAScript.html#_3-和" class="sidebar-link">3. ||= 和 &amp;&amp;=</a></li></ul></li></ul></li><li><a href="/notes/study/axios配置.html" class="sidebar-link">axios拦截配置</a></li><li><a href="/notes/study/git操作.html" class="sidebar-link">git基础</a></li><li><a href="/notes/study/vscode插件和配置.html" class="sidebar-link">vscode插件和配置</a></li><li><a href="/notes/study/vscode配置vue断点.html" class="sidebar-link">vscode配置vue断点</a></li><li><a href="/notes/study/nginx开启Gzip和vue打包使用Gzip.html" class="sidebar-link">nginx开启Gzip和vue打包使用Gzip</a></li><li><a href="/notes/study/postcss-px-to-viewport的使用.html" class="sidebar-link">postcss使用</a></li><li><a href="/notes/study/typescript基础.html" class="sidebar-link">TypeScript基础</a></li><li><a href="/notes/study/百度地图和高德地图添加谷歌瓦片.html" class="sidebar-link">百度地图和高德地图添加谷歌地块</a></li><li><a href="/notes/study/面试题.html" class="sidebar-link">面试题</a></li><li><a href="/notes/study/jenkins和nginx实现前端自动构建.html" class="sidebar-link">jenkins和nginx实现前端自动构建</a></li><li><a href="/notes/study/不错的库.html" class="sidebar-link">不错的库</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-58d5ab76 data-v-5c9abedb><h3 class="title" style="display:none;" data-v-58d5ab76 data-v-58d5ab76>ECMAScript</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><input type="password" value="" data-v-58d5ab76> <span data-v-58d5ab76>Konck! Knock!</span> <button data-v-58d5ab76>OK</button></label> <div class="footer" style="display:none;" data-v-58d5ab76 data-v-58d5ab76><span data-v-58d5ab76><i class="iconfont reco-theme" data-v-58d5ab76></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-58d5ab76>vuePress-theme-reco</a></span> <span data-v-58d5ab76><i class="iconfont reco-copyright" data-v-58d5ab76></i> <a data-v-58d5ab76><span data-v-58d5ab76>ChanXuu</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-5c9abedb><main class="page"><div class="page-title" style="display:none;"><h1>ECMAScript</h1> <hr> <div data-v-7b2e794a><i class="iconfont reco-account" data-v-7b2e794a><span data-v-7b2e794a>ChanXuu</span></i> <i class="iconfont reco-date" data-v-7b2e794a><span data-v-7b2e794a>2021-09-08</span></i> <!----> <i class="iconfont reco-tag tags" data-v-7b2e794a><span class="tag-item" data-v-7b2e794a>
+      javascript
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="es6"><a href="#es6" class="header-anchor">#</a> ES6</h2> <h3 id="let，const与var的区别"><a href="#let，const与var的区别" class="header-anchor">#</a> let，const与var的区别</h3> <h4 id="var-存在变量提升，let-不存在"><a href="#var-存在变量提升，let-不存在" class="header-anchor">#</a> var 存在变量提升，let 不存在</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>//let
+console.log(c) //Uncaught ReferenceError: Cannot access 'c' before initialization
+let c = 100      
+
+//var
+console.log(c) //underfined
+var c =100
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>因为 let 不存在变量提升，所以上面 let 定义的变量会报错，报错的意思是我们想要打印 c 的值，必须先要初始化，然后再去使用它，必须遵循 <strong>先声明，后使用</strong> 的使用规则。 var 定义的变量结果为 underfined 代码相当于：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var c;//变量提升，但是值不能提升，所以是underfined
+console.log(c) //underfined
+c = 100
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="let在同一个作用域下不可以重复定义同一个变量值，而var可以"><a href="#let在同一个作用域下不可以重复定义同一个变量值，而var可以" class="header-anchor">#</a> let在同一个作用域下不可以重复定义同一个变量值，而var可以</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>//let
+let c = 100 
+let c = 200  //报错 Uncaught SyntaxError: Unexpected identifier
+
+//var
+var c = 100
+var c = 200 
+console.log(c) //200 正常运行，会覆盖前一个值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="有严格的作用域，var属于函数作用域，let属于块级作用域"><a href="#有严格的作用域，var属于函数作用域，let属于块级作用域" class="header-anchor">#</a> 有严格的作用域，var属于函数作用域，let属于块级作用域</h4> <p>ES5 中作用域有：全局作用域、函数作用域，没有块作用域的概念。 ES6 中新增了块级作用域，块作用域由**{ }**包括，<strong>if</strong> 语句和 <strong>for</strong> 语句里面的 <strong>{ }</strong> 也属于块作用域。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//let
+function fun(){
+  let n = 10
+  if(true){
+    let n = 20 //与上面的 n 不属于同一个作用域，所以不受影响
+  }
+  console.log(n) //10
+}
+fun()
+
+//var
+function fun(){
+  var n = 10
+  if(true){
+    var n = 20 //会覆盖上面的 n 的值
+  }
+  console.log(n)//20
+}
+fun()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h4 id="const"><a href="#const" class="header-anchor">#</a> const</h4> <h5 id="const-声明的变量为只读的，一旦声明，常量的值就不能改变"><a href="#const-声明的变量为只读的，一旦声明，常量的值就不能改变" class="header-anchor">#</a> const 声明的变量为只读的，一旦声明，常量的值就不能改变</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>const a =2; 
+a=3;//错误  Uncaught TypeError: Assignment to constant variable.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h5 id="const-声明的变量一定要初始化，不能只声明不赋值，"><a href="#const-声明的变量一定要初始化，不能只声明不赋值，" class="header-anchor">#</a> const 声明的变量一定要初始化，不能只声明不赋值，</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>const a; // 错误  Uncaught SyntaxError: Missing initializer in const declaration
+ //(const声明中缺少初始化程序)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h5 id="const-声明的变量只在块级作用域内有效。"><a href="#const-声明的变量只在块级作用域内有效。" class="header-anchor">#</a> const 声明的变量只在块级作用域内有效。</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  const  a = 3
+}
+console.log(a) // Uncaught ReferenceError: a is not defined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>但是用 const 声明的<strong>对象的属性</strong>是可以更改的,const 实质上保证的并不是变量的值不得改动，而是变量指向的 <strong>内存地址</strong> 的值不得改动,对于简单类型数据，值就保存在变量指向的<strong>内存地址</strong>中，相当于常量。而对于<strong>复合型</strong>的数据，变量指向的是内存地址保存的是<strong>一个指针</strong>。const 只能保证指针是不可以被更改，但指针指向的<strong>数据结构</strong>是可以被改变的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//以下代码正常执行
+const  obj = {}
+obj.name=&quot;xiaoke&quot; 
+console.log(obj) // {name: &quot;xiaoke&quot;}
+
+const  arr = []
+arr.push(&quot;xiaoke&quot;)
+console.log(arr) // [&quot;xiaoke&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="数组的解构"><a href="#数组的解构" class="header-anchor">#</a> 数组的解构</h3> <p>1.比如我们要取出arr中的值，我们可以使用下面的方式取出,a1,a2,a3代表了相应位置坐标的值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = ['a','b','c']
+
+const [a1,a2,a3] = arr
+console.log(a1,a2,a3)//a b c
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>2.如果我们只想取索引为2的值，我们可以</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = ['a', 'b', 'c']
+
+const [, , a3] = arr //用逗号进行占位
+console.log(a3)//c
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>3.如果我们想把b和c一起取出来我们可以</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = ['a', 'b', 'c']
+
+const [, ...arr2] = arr
+console.log(arr2) //['b','c']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>4.如果我们想取出一个数组中不确定存在的元素时，我们可以先给这个值赋值默认值，默认值的意思是数组中不存在此元素时，会输出默认值，存在这个值是输出存在的值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>存在
+const arr = ['a', 'b', 'c', 'd']
+const [a1, a2, a3, a4 = 'dd'] = arr
+console.log(a1, a2, a3, a4)
+console.log(arr)//a b c d
+
+不存在
+const arr = ['a', 'b', 'c']
+const [a1, a2, a3, a4 = 'dd'] = arr
+console.log(a1, a2, a3, a4)
+console.log(arr)// a b c dd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="对象的解构"><a href="#对象的解构" class="header-anchor">#</a> 对象的解构</h3> <p>1.对象的解构和数组的解构很相似，只是对象的解构不是按索引位置进行取值的，而是取出对象中的key值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = { name: &quot;xuke&quot;, age: 22 }
+
+const { age } = obj
+console.log(age) //22
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>2.对象和数组一样也可以设置默认值，如果我们想取出一个对象中不确定存在的元素时，我们可以先给这个值赋值默认值，默认值的意思是数组中不存在此元素时，会输出默认值，存在这个值是输出存在的值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = { name: &quot;xuke&quot;, age: 22 }
+
+const { hobby = &quot;eat&quot; } = obj
+console.log(hobby) // eat
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>3.如果我们代码中已经定义了一个与obj中相同的属性名，我们可以使用下面的方式给属性名一个别名，然后再取出</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = { name: &quot;xuke&quot;, age: 22 }
+const name = 'keke'
+const { name } = obj
+console.log(name) //会报错：SyntaxError: Identifier 'name' has already been declared
+
+改正
+const obj = { name: &quot;xuke&quot;, age: 22 }
+const name = 'keke'
+const { name : newname } = obj
+console.log(newname) //xuke
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="模板字符串"><a href="#模板字符串" class="header-anchor">#</a> 模板字符串</h3> <p>1.我们用反引号来包裹起来字符串: ``</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = 'xuke'
+const str = `my name is ${name}`
+console.log(str) // my name is xuke
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>2.模板字符串支持换行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = 'xuke'
+const str = `my name
+ is ${name}`
+console.log(str)
+//my name
+//is xuke
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>3.${}中可以使用函数表达式，返回最终值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = `my age is ${true ? 22 : 10}`
+console.log(str) //my age is 22
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="object-keys"><a href="#object-keys" class="header-anchor">#</a> Object.keys</h3> <p>可以用来获取对象的key的集合，进而可以获得对应key的value</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {
+  name: '林三心',
+  age: 22,
+  gender: '男'
+}
+
+const keys = Object.keys(obj)
+console.log(keys) // [ 'name', 'age', 'gender' ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="array-foreach"><a href="#array-foreach" class="header-anchor">#</a> Array.forEach</h3> <p>ES6新加的数组遍历方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const eachArr = [1, 2, 3, 4, 5]
+
+// 三个参数：遍历项 索引 数组本身
+// 配合箭头函数
+eachArr.forEach((item, index, arr) =&gt; {
+  console.log(item, index, arr)
+})
+1 0 [ 1, 2, 3, 4, 5 ]
+2 1 [ 1, 2, 3, 4, 5 ]
+3 2 [ 1, 2, 3, 4, 5 ]
+4 3 [ 1, 2, 3, 4, 5 ]
+5 4 [ 1, 2, 3, 4, 5 ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="array-map"><a href="#array-map" class="header-anchor">#</a> Array.map</h3> <p>常用于返回一个处理过后的新数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const mapArr = [1, 2, 3, 4, 5]
+
+// 三个参数：遍历项 索引 数组本身
+// 配合箭头函数，对每一个元素进行翻倍
+const mapArr2 = mapArr.map((num, index, arr) =&gt; 2 * num)
+console.log(mapArr2)
+[ 2, 4, 6, 8, 10 ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="array-filter"><a href="#array-filter" class="header-anchor">#</a> Array.filter</h3> <p>顾名思义，用来过滤的方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const filterArr = [1, 2, 3, 4, 5]
+
+// 三个参数：遍历项 索引 数组本身
+// 配合箭头函数，返回大于3的集合
+const filterArr2 = filterArr.filter((num, index, arr) =&gt; num &gt; 3)
+console.log(filterArr2)
+[ 4, 5 ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="array-some"><a href="#array-some" class="header-anchor">#</a> Array.some</h3> <p>some，意思就是只有一个是真，那就返回真</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const someArr = [false, true, false, true, false]
+
+// 三个参数：遍历项 索引 数组本身
+// 配合箭头函数，只要有一个为true，就返回true，一个都true都没有，就返回false
+const someArr2 = someArr.some((bol, index, arr) =&gt; bol)
+console.log(someArr2)
+true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="array-every"><a href="#array-every" class="header-anchor">#</a> Array.every</h3> <p>every跟some是相反的，some是只有一个就行，every是要所有为真才返回真</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const everyArr = [false, true, false, true, false]
+
+// 三个参数：遍历项 索引 数组本身
+// 配合箭头函数，需要所有为true，才返回true，否则返回false
+const everyArr2 = everyArr.every((bol, index, arr) =&gt; bol)
+console.log(everyArr2)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="array-reduce"><a href="#array-reduce" class="header-anchor">#</a> Array.reduce</h3> <ul><li>第一个参数callback函数： pre为上次return的值，next为数组的本次遍历的项</li> <li>第二个参数为初始值，也是第一个pre</li></ul> <p>举两个例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 计算 1 + 2 + 3 + 4 + 5
+const reduceArr = [1, 2, 3, 4, 5]
+const sum = reduceArr.reduce((pre, next) =&gt; {
+  return pre + next
+}, 0)
+console.log(sum) // 15
+
+// 统计元素出现个数
+const nameArr = ['林三心', 'sunshine_lin', '林三心', '林三心', '科比']
+const totalObj = nameArr.reduce((pre, next) =&gt; {
+  if (pre[next]) {
+    pre[next]++
+  } else {
+    pre[next] = 1
+  }
+  return pre
+}, {})
+console.log(totalObj) // { '林三心': 3, sunshine_lin: 1, '科比': 1 }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="array-form"><a href="#array-form" class="header-anchor">#</a> Array.form</h3> <p>Array.from()方法就是将一个类数组对象或者可遍历对象转换成一个真正的数组。</p> <p>1、将类数组对象转换为真正数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arrayLike = {
+    0: 'tom', 
+    1: '65',
+    2: '男',
+    3: ['jane','john','Mary'],
+    'length': 4
+}
+let arr = Array.from(arrayLike)
+console.log(arr) // ['tom','65','男',['jane','john','Mary']]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>那么，如果将上面代码中length属性去掉呢？实践证明，答案会是一个长度为0的空数组。</p> <p>这里将代码再改一下，就是具有length属性，但是对象的属性名不再是数字类型的，而是其他字符串型的，代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arrayLike = {
+    'name': 'tom', 
+    'age': '65',
+    'sex': '男',
+    'friends': ['jane','john','Mary'],
+    length: 4
+}
+let arr = Array.from(arrayLike)
+console.log(arr)  // [ undefined, undefined, undefined, undefined ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>会发现结果是长度为4，元素均为undefined的数组</p> <p>由此可见，要将一个类数组对象转换为一个真正的数组，必须具备以下条件：</p> <p>1、该类数组对象必须具有length属性，用于指定数组的长度。如果没有length属性，那么转换后的数组是一个空数组。</p> <p>2、该类数组对象的属性名必须为数值型或字符串型的数字</p> <p>ps: 该类数组对象的属性名可以加引号，也可以不加引号</p> <h3 id="array-of"><a href="#array-of" class="header-anchor">#</a> Array.of</h3> <p>Array.of()方法用于将一组值转化为数组，即新建数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Array.of(3,11,1) // [3,11,1]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="copywithin"><a href="#copywithin" class="header-anchor">#</a> copyWithin()</h3> <p>在当前数组内部，将指定位置的成员复制的指定位置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/* Array.prototype.copyWithin(target, start = 0, end = this.length)
+ * target 目标位置
+ * start 开始位置
+ * end 结束位置
+ * @return 新数组
+ */
+// 将第3到最后一位成员,即[4,5]，复制到第0位，替换掉[1,2],得到新数组[4,5,3,4,5]
+[1, 2, 3, 4, 5].copyWithin(0, 3)  // [4,5,3,4,5]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="对象属性同名简化"><a href="#对象属性同名简化" class="header-anchor">#</a> 对象属性同名简化</h3> <p>以前同名属性需要这么写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = '林三心'
+const age = '22'
+
+const obj = {
+  name: name,
+  age: age
+}
+
+console.log(obj) // { name: '林三心', age: '22' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>ES6新增语法，只需这么写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = '林三心'
+const age = '22'
+
+// 属性同名可简写
+const obj = {
+  name
+  age
+}
+
+console.log(obj) // { name: '林三心', age: '22' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="字符串的扩展方法"><a href="#字符串的扩展方法" class="header-anchor">#</a> 字符串的扩展方法</h3> <ol><li><p>startsWith() 判断是否以某个字符开头</p></li> <li><p>endsWith()判断是否以某个字符结尾</p></li> <li><p>includes()判断是否包含某个字符</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const message = 'welcome to beijing.'
+
+console.log(message.startsWith('welcome'))//true
+console.log(message.startsWith('wel'))//true
+console.log(message.endsWith('beijing'))//false
+console.log(message.endsWith('.'))//true
+console.log(message.includes('bei'))//true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="参数默认值"><a href="#参数默认值" class="header-anchor">#</a> 参数默认值</h3> <ol><li>当我们给函数传参的时候，我们可以使用以下方法设置默认值</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>function num(x = 20) {
+    return x += x
+}
+//x不传为undefined时 ，会使用我们的默认值 20
+console.log(num()) //40
+//传值的时候会使用我们传的值
+console.log(num(10)) //20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>注意：我们对参数设置默认值的时候，要把带有默认值的参数放到最后面</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//错误的写法
+function num(a = 20, x) {
+    return a + x
+}
+
+//正确的写法
+function num(a , x = 20) {
+    return a + x
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="展开运算符（-）"><a href="#展开运算符（-）" class="header-anchor">#</a> 展开运算符（...）</h3> <p>1.合并数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let a = [1,2,3];
+let b = [4,5,6];
+let c = [...a,...b]; // [1,2,3,4,5,6]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>2.替代apply</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function f(a,b,c){
+  console.log(a,b,c)
+}
+
+let args = [1,2,3];
+// 以下三种方法结果相同
+f.apply(null,args)
+f(...args)
+f(1,2,3)
+
+//===========
+function f2(...args){
+  console.log(args)
+}
+f2(1,2,3) // [1,2,3]
+
+function f3(){
+  console.log(Array.from(arguments))
+}
+f3(1,2,3) // [1,2,3]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>3.浅拷贝</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//数组
+var a = [1,2,4]
+var b = [...a]
+a.push(6)
+console.log(b) // [1,2,4]
+
+//对象
+var a = {a:1}
+var b = {...a}
+a.a = 5
+console.log(b.a) // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="rest运算符（标识剩余参数）"><a href="#rest运算符（标识剩余参数）" class="header-anchor">#</a> rest运算符（标识剩余参数）</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test02(first, ...arg) {
+  for (let item of arg) {
+    console.log(item); //依次输出1,2，3,4,5,6
+  }
+  console.log(first); //0
+}
+test02(0, 1, 2, 3, 4, 5, 6);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="箭头函数"><a href="#箭头函数" class="header-anchor">#</a> 箭头函数</h3> <p>1.使用方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const fun = function () {
+    return 'hello'
+}
+const fun2 = () =&gt; 'hello'
+console.log(fun()) // hello
+console.log(fun2())// hello
+
+//===
+
+const nums = [1, 2.3, 2, 46, 6, 4, 3, 2]
+const result = nums.filter(num =&gt; num % 2 === 0)
+console.log(result)//[ 2, 46, 6, 4, 2]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>2.箭头函数不会改变this的指向</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Person = {
+    name:'xuke',
+    say1:function(){
+        console.log(this.name) //xuke 指向Person
+    },
+    say2:()=&gt;{
+        console.log(this.name) //undefined 指向window
+    }
+}
+Person.say1()
+Person.say2()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>3.setTimeOut情况</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Person = {
+    name: 'xuke',
+    say1: function () {
+        setTimeout(function () {//setTimeOut函数体里面的函数题被放到全局作用域去调用
+            console.log(this.name) //undefined 
+        }, 1000)
+        setTimeout(() =&gt; {//setTimeOut函数体里面的箭头函数始终指向当前作用域中的this
+            console.log(this.name) //xuke
+        }, 1000)
+    }
+}
+Person.say1()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>普通函数和箭头函数的区别：</p> <ul><li><p>1、箭头函数不可作为构造函数，不能使用new</p></li> <li><p>2、箭头函数没有自己的this</p></li> <li><p>3、箭头函数没有arguments对象</p></li> <li><p>4、箭头函数没有原型对象</p></li></ul> <h3 id="对象字面量"><a href="#对象字面量" class="header-anchor">#</a> 对象字面量</h3> <p>1.当我们对象中的属性名和值相等的时候，我们可以把值省略:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = 'xuke'
+//普通用法
+const obj1 = {
+    name:name,
+    age:12
+}
+//字面量用法
+const obj2 = {
+    name,
+    age:12
+}
+console.log(obj1) //{ name: 'xuke', age: 12 }
+console.log(obj2) //{ name: 'xuke', age: 12 }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>2.当我们想用表达式生成对象的属性名的时猴，我们可以在[]中写入我们的表达式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//es2015之前
+const name = 'xuke'
+const obj = {
+    name,
+    age:12
+}
+const obj2 = {}
+obj2[obj.name] = 'keke'
+console.log(obj2) //{ xuke: 'keke' }
+
+//es2015
+const name = 'xuke'
+const obj = {
+    name,
+    age:12
+}
+const obj2 = {
+    [obj.name]:'keke'
+}
+console.log(obj2) //{ xuke: 'keke' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="object-assign"><a href="#object-assign" class="header-anchor">#</a> Object.assign()</h3> <p>Object.assign方法用于对象的合并，将源对象（source）的所有可枚举属性，复制到目标对象（target）,如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性覆盖前面的属性</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const source = {
+    a:123,
+    b:123
+}
+const target ={
+    a:456,
+    c:111
+}
+
+console.log(Object.assign(target,source)) //{a:123,c:111,b:123}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>还可用于对象的浅拷贝，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const source = {
+    a:123,
+    b:123,
+    name:{
+        cc:'ccc'
+    }
+}
+const target = Object.assign({},source)
+target.a = 333
+console.log(target) //{ a: 333, b: 123 }
+console.log(source) //{ a: 123, b: 123 }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="find和findindex"><a href="#find和findindex" class="header-anchor">#</a> find和findIndex</h3> <ul><li>find：找到返回被找元素，找不到返回undefined</li> <li>findIndex：找到返回被找元素索引，找不到返回-1</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const findArr = [
+  { name: '科比', no: '24' },
+  { name: '罗斯', no: '1' },
+  { name: '利拉德', no: '0' }
+]
+
+const kobe = findArr.find(({ name }) =&gt; name === '科比')
+const kobeIndex = findArr.findIndex(({ name }) =&gt; name === '科比')
+console.log(kobe) // { name: '科比', no: '24' }
+console.log(kobeIndex) // 0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="for-of-和-for-in"><a href="#for-of-和-for-in" class="header-anchor">#</a> for of 和 for in</h3> <ul><li>for in ：遍历方法，可遍历对象和数组</li> <li>for of ：遍历方法，只能遍历数组，不能遍历对象</li></ul> <p>先看for in：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = { name: '林三心', age: 22, gender: '男' }
+const arr = [1, 2, 3, 4, 5]
+
+for(let key in obj) {
+  console.log(key)
+}
+name
+age
+gender
+
+for(let index in arr) {
+  console.log(index)
+}
+0 1 2 3 4
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>再看 for of：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>for(let item of arr) {
+  console.log(item)
+}
+1 2 3 4 5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="promise"><a href="#promise" class="header-anchor">#</a> promise</h3> <ol><li><p>定义：promise是js的内置数据结构，代表未来某个时间将要发生的事情（通常是一个异步操作）</p></li> <li><p>作用：解决异步回调，将异步操作以同步的流程表达出来，避免层层嵌套回调函数</p></li> <li><p>状态：初始化（pending）成功（fullfilled）失败（rejected）</p></li> <li><p>语法：</p></li></ol> <p>1).创建promise实例对象（初始化promise对象的状态为pending）</p> <p>2).执行异步任务：例如开启定时器、发送ajax请求</p> <p>3).根据异步任务执行的结果修改promise的状态：成功resolve（），失败reject（）</p> <p>4).promise实例对象有then方法，该方法有两个参数，分别是成功和失败状态的回调函数</p> <p>看看基本使用</p> <ul><li>成功状态</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function requestData () {
+  // 模拟请求
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve('林三心')
+    }, 1000)
+  })
+}
+
+requestData().then(res =&gt; {
+  console.log(res) // 一秒钟后输出 '林三心'
+}, err =&gt; {
+  console.log(err)
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>失败状态</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function requestData () {
+  // 模拟请求
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      reject('错误啦')
+    }, 1000)
+  })
+}
+
+requestData().then(res =&gt; {
+  console.log(res)
+}, err =&gt; {
+  console.log(err) // 一秒钟后输出 '错误啦'
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li><p>all方法</p></li> <li><ul><li>接收一个Promise数组，数组中如有非Promise项，则此项当做成功</li> <li>如果所有Promise都成功，则返回成功结果数组</li></ul></li> <li><ul><li>如果有一个Promise失败，则返回这个失败结果</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 如果全都为成功
+function fn(time) {
+  return new Promise((resolve, reject) =&gt; {
+    console.log(88)
+    setTimeout(() =&gt; {
+      resolve(`${time}毫秒后我成功啦！！！`)
+    }, time)
+  })
+}
+
+Promise.all([fn(2000), fn(3000), fn(1000)]).then(res =&gt; {
+  // 3秒后输出 [ '2000毫秒后我成功啦！！！', '3000毫秒后我成功啦！！！', '1000毫秒后我成功啦！！！' ]
+  console.log(res) 
+}, err =&gt; {
+  console.log(err)
+})
+
+
+
+// 如果有一个失败
+function fn(time, isResolve) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      isResolve ? resolve(`${time}毫秒后我成功啦！！！`) : reject(`${time}毫秒后我失败啦！！！`)
+    }, time)
+  })
+}
+
+Promise.all([fn(2000, true), fn(3000), fn(1000, true)]).then(res =&gt; {
+  console.log(res)
+}, err =&gt; {
+  console.log(err) // 3秒后输出 '3000毫秒后我失败啦！！！'
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><ul><li><p>race方法</p></li> <li><ul><li>接收一个Promise数组，数组中如有非Promise项，则此项当做成功</li> <li>哪个Promise最快得到结果，就返回那个结果，无论成功失败</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn(time, isResolve) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      isResolve ? resolve(`${time}毫秒后我成功啦！！！`) : reject(`${time}毫秒后我失败啦！！！`)
+    }, time)
+  })
+}
+
+Promise.race([fn(2000, true), fn(3000), fn(1000)]).then(res =&gt; {
+  console.log(res)
+}, err =&gt; {
+  console.log(err) // 1秒后输出
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="class"><a href="#class" class="header-anchor">#</a> Class</h3> <p>以前咱们使用构造函数生成对象，这么做</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Person(name) {
+  this.name = name
+}
+
+Person.prototype.sayName = function () {
+  console.log(this.name)
+}
+
+const kobe = new Person('科比')
+kobe.sayName() // 科比
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>而有了ES6的class可以这么做</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>lass Person {
+  constructor(name) {
+    // 构造器
+    this.name = name
+  }
+
+  sayName() {
+    console.log(this.name)
+  }
+}
+
+const kobe = new Person('科比')
+kobe.sayName() // 科比
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>值得一提的是，class本质也是function，class是function的语法糖</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class Person {}
+
+console.log(typeof Person) // function
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>除了以上，还需要知道class的以下知识点</p> <p>静态属性和静态方法，使用static定义的属性和方法只能class自己用，实例用不了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class Person {
+  constructor(name) {
+    this.name = name
+  }
+
+  static age = 22
+
+  static fn() {
+    console.log('哈哈')
+  }
+}
+console.log(Person.age) // 22
+Person.fn() // 哈哈
+
+const sunshine_lin = new Person('林三心')
+console.log(sunshine_lin.age) // undefined
+sunshine_lin.fn() // fn is not a function
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>extend继承</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>lass Animal {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+}
+
+class Cat extends Animal {
+  say() {
+    console.log(this.name, this.age)
+  }
+}
+
+const cat = new Cat('ketty', 5) // 继承了Animal的构造器
+cat.say() // ketty 5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="set"><a href="#set" class="header-anchor">#</a> Set()</h3> <p>ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。</p> <h4 id="_1-add方法"><a href="#_1-add方法" class="header-anchor">#</a> 1.add方法</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const s = new Set()
+
+//通过add向Set中添加元素
+//由于add()返回的是一个Set对象，所以我们可以链式调用
+s.add(1).add(2).add(3)
+console.log(s) //Set(3) { 1, 2, 3 }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_2-遍历"><a href="#_2-遍历" class="header-anchor">#</a> 2.遍历</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const s = new Set()
+s.add(1).add(2).add(3)
+
+s.forEach(num=&gt;console.log(num)) //1  2  3
+
+for(let num of s){console.log(num)} //1  2  3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_3-获取set长度"><a href="#_3-获取set长度" class="header-anchor">#</a> 3.获取Set长度</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const s = new Set()
+s.add(1).add(2).add(3)
+
+console.log(s.size) //3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_4-has方法"><a href="#_4-has方法" class="header-anchor">#</a> 4.has方法</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const s = new Set()
+s.add(1).add(2).add(3)
+
+//判断Set对象中是否存在某个值
+console.log(s.has(22)) //false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_5-delete方法"><a href="#_5-delete方法" class="header-anchor">#</a> 5.delete方法</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const s = new Set()
+s.add(1).add(2).add(3)
+//删除Set集合中的元素
+s.delete(2)
+console.log(s) //Set(2) { 1, 3 }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_6-clear方法"><a href="#_6-clear方法" class="header-anchor">#</a> 6.clear方法</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const s = new Set()
+s.add(1).add(2).add(3)
+
+//清空集合中的元素
+// s.clear()
+// console.log(s) //Set(0) {}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_7-去重"><a href="#_7-去重" class="header-anchor">#</a> 7.去重</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [2,34,2,4,12,34]
+
+console.log([...new Set(arr)])
+console.log(Array.from(new Set(arr)))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="map"><a href="#map" class="header-anchor">#</a> Map()</h3> <p>Map 是 ES6 中新增的数据结构，Map 类似于对象，但普通对象的 key 必须是字符串或者数字，而 Map 的 key 可以是任何数据类型...</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//初始化
+const map = new Map()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_1-可以当作普通对象使用"><a href="#_1-可以当作普通对象使用" class="header-anchor">#</a> 1.可以当作普通对象使用</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const map = new Map()
+
+map.set('name','xuke')
+console.log(map) //Map(1) { 'name' =&gt; 'xuke' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_2-键值可以存放对象"><a href="#_2-键值可以存放对象" class="header-anchor">#</a> 2.键值可以存放对象</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const map = new Map()
+
+const obj1 = {
+    a:12,
+    b:11
+}
+map.set(obj1,'obj')
+console.log(map) //Map(1) { { a: 12, b: 11 } =&gt; 'obj' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="_3-键值可以存放函数"><a href="#_3-键值可以存放函数" class="header-anchor">#</a> 3.键值可以存放函数</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const map = new Map()
+
+function a(){
+    return 100
+}
+
+map.set(a,'a')
+console.log(map) //Map(1) { [Function: a] =&gt; 'a' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>和set一样具有下面的方法 map.has(a) map.delete(a) map.clear()</p> <h4 id="_4-遍历"><a href="#_4-遍历" class="header-anchor">#</a> 4.遍历</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const map = new Map()
+function a(){
+    return 100
+}
+map.set(a,'a')
+
+//方法1
+map.forEach((value,key)=&gt;{
+    console.log(key) //[Function: a]
+    console.log(key()) //100
+    console.log(value) //a
+})
+
+//方法2
+for(let item of map){
+     console.log(item) //[ [Function: a], 'a' ]
+     console.log(item[0]()) //100
+     console.log(item[1])//a
+ }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="for-of"><a href="#for-of" class="header-anchor">#</a> for...of</h3> <h4 id="_1-遍历数组"><a href="#_1-遍历数组" class="header-anchor">#</a> 1.遍历数组</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [2, 3, 2, 33, 22, 223, 21, 3]
+
+for (let item of arr) {
+   console.log(item)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_2-可用-break-终止循环"><a href="#_2-可用-break-终止循环" class="header-anchor">#</a> 2.可用 break 终止循环</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [2, 3, 2, 33, 22, 223, 21, 3]
+for (let item of arr) {
+    if (item &gt; 10) break
+    console.log(item)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_3-遍历set"><a href="#_3-遍历set" class="header-anchor">#</a> 3.遍历Set()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const set = new Set([2, 3, 1, 2, 34, 3])
+
+for (let item of set) {
+    console.log(item) //2 3 1 34
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_4-遍历map"><a href="#_4-遍历map" class="header-anchor">#</a> 4.遍历Map</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>const map = new Map()
+map.set('name','xuke')
+map.set('age','12')
+
+for (let item of map){
+    console.log(item) //[ 'name', 'xuke' ]  [ 'age', '12' ]
+}
+
+//改进
+//用数组解构的方式取出key value 方便使用
+for (let [key,value] of map){
+   console.log(key) //name  age
+   console.log(value)//xuke 12
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="es7"><a href="#es7" class="header-anchor">#</a> ES7</h2> <h3 id="_1-数组的includes方法"><a href="#_1-数组的includes方法" class="header-anchor">#</a> 1.数组的includes方法</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr =[2,3,2,13,23,45]
+//原始方法
+console.log(arr.indexOf(3)) //1
+console.log(arr.indexOf(300)) //-1
+//includes方法
+console.log(arr.includes(3))//true
+console.log(arr.includes(300))//faalse
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_2-指数运算符"><a href="#_2-指数运算符" class="header-anchor">#</a> 2.指数运算符</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>表示2的10次方:
+//原始
+console.log(Math.pow(2,10)) //1024
+
+//es2016
+console.log(2 ** 10) //1024
+console.log(3 ** 10) //59049
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="es8"><a href="#es8" class="header-anchor">#</a> ES8</h2> <h3 id="_1-object-values"><a href="#_1-object-values" class="header-anchor">#</a> 1.object.values</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj={
+   name:'xuke',
+   age:22
+}
+
+//与object.keys类似，object.keys返回所有`键`组成的数组，
+//Object.values返回的对象中的所有`值`组成的数组，
+
+console.log(Object.values(obj)) //[ 'xuke', 22 ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_2-object-entries"><a href="#_2-object-entries" class="header-anchor">#</a> 2.Object.entries</h3> <p>Object.entries,返回对象的键值对组成的组成的数组,</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj={
+   name:'xuke',
+   age:22
+}
+console.log((Object.entries(obj))) //[ [ 'name', 'xuke' ], [ 'age', 22 ] ]
+//遍历方法
+for(let [key,value] of Object.entries(obj)){
+   console.log(key) //name  age
+   console.log(value) //xuke 22
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_3-string方法-填充字符串"><a href="#_3-string方法-填充字符串" class="header-anchor">#</a> 3.string方法 填充字符串</h3> <p>padStart()和padEnd()</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let str = 'xuke'
+//表示用 &quot;=&quot; 填充到 6位长度 的字符串(&quot;=&quot;在字符串的`前面`填充)
+console.log(str.padStart(6,'=')) //==xuke
+
+//表示用 &quot;=&quot; 填充到 6位长度 的字符串(&quot;=&quot;在字符串的`后面`填充)
+console.log(str.padEnd(6,'=')) //xuke==
+
+const str1 = 'xuke'
+const str2 = 'is'
+const str3 = 'beautiful'
+
+console.log(str1.padStart(26,'-'))//----------------------xuke
+console.log(str2.padStart(26,'-'))//------------------------is
+console.log(str3.padStart(26,'-'))//-----------------beautiful
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="_4-在函数参数中添加尾逗号"><a href="#_4-在函数参数中添加尾逗号" class="header-anchor">#</a> 4.在函数参数中添加尾逗号</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>function sum(a,b,){
+    return a+b
+}
+console.log(sum(1,4)) // 5
+
+const array = [2,3,1,5,45,32,]//方便数组的分割
+console.log(array) 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_5-async-await"><a href="#_5-async-await" class="header-anchor">#</a> 5.async/await</h3> <p>我们平时可能会遇到这种场景，接口一，请求到数据一，而数据一被当做请求二的参数去请求数据二，我们会用Promise这么做</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn() {
+  // 模拟第一次请求
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(5)
+    }, 1000)
+  }).then(res =&gt; {
+    // 模拟第二次请求
+    new Promise((resolve, reject) =&gt; {
+      setTimeout(() =&gt; {
+        // 拿第一次请求的数据去乘10，当做第二次请求的数据
+        resolve(res * 10)
+      }, 2000)
+    }).then(sres =&gt; {
+      console.log(sres)
+    })
+
+  })
+}
+fn() // 1 + 2 = 3 3秒后输出 50
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>这样的嵌套是不美观的，如果有很多个接口，那就会嵌套很多层，此时我们可以使用async/await来以同步方式执行异步，注意以下几点：</p> <ul><li><p>await只能在async函数里使用</p></li> <li><p>await后面最好接Promise，如果后面接的是普通函数则会直接执行</p></li> <li><p>async函数返回的是一个Promise</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn1 () {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(5)
+    }, 1000)
+  })
+}
+
+function fn2 (data) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(data * 10)
+    }, 2000)
+  })
+}
+
+async function req () {
+  // 同步方式执行异步，像排队一样
+  const data1 = await fn1() // 等待1秒后返回数据再往下执行
+  const data2 = await fn2(data1) // 拿data1去请求2秒后，往下走
+  console.log(data2) // 总共3秒后 输出 50
+}
+req()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="es9"><a href="#es9" class="header-anchor">#</a> ES9</h2> <h3 id="_1-for-await-of-异步迭代器"><a href="#_1-for-await-of-异步迭代器" class="header-anchor">#</a> 1.for await of 异步迭代器</h3> <p>循环等待每个Promise对象变为resolved状态才进入下一步。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn (time) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(`${time}毫秒后我成功啦！！！`)
+    }, time)
+  })
+}
+
+fn(3000).then(res =&gt; console.log(res))
+fn(1000).then(res =&gt; console.log(res))
+fn(2000).then(res =&gt; console.log(res))
+
+结果是
+
+1000毫秒后我成功啦！！！
+2000毫秒后我成功啦！！！
+3000毫秒后我成功啦！！！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>但是我想要这个结果</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>3000毫秒后我成功啦！！！
+1000毫秒后我成功啦！！！
+2000毫秒后我成功啦！！！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>第一时间我们肯定想到的是async/await</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn (time) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(`${time}毫秒后我成功啦！！！`)
+    }, time)
+  })
+}
+
+async function asyncFn () {
+  // 排队
+  const data1 = await fn(3000)
+  console.log(data1) // 3秒后 3000毫秒后我成功啦！！！
+  const data2 = await fn(1000)
+  console.log(data2) // 再过1秒 1000毫秒后我成功啦！！！
+  const data3 = await fn(2000)
+  console.log(data3) // 再过2秒 2000毫秒后我成功啦！！！
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>但是上面代码也是有缺点的，如果有几十个，那不是得写几十个await，有没有一种方法可以通过循环来输出呢？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn (time) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(`${time}毫秒后我成功啦！！！`)
+    }, time)
+  })
+}
+
+async function asyncFn () {
+  const arr = [fn(3000), fn(1000), fn(1000), fn(2000), fn(500)]
+  for await (let x of arr) {
+    console.log(x)
+  }
+}
+
+asyncFn()
+3000毫秒后我成功啦！！！
+1000毫秒后我成功啦！！！
+1000毫秒后我成功啦！！！
+2000毫秒后我成功啦！！！
+500毫秒后我成功啦！！！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="_2-promise-finally"><a href="#_2-promise-finally" class="header-anchor">#</a> 2.Promise.finally</h3> <p>新增的Promise方法，无论失败或者成功状态，都会执行这个函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bo
+new Promise((resolve, reject) =&gt; {
+  resolve('成功喽')
+}).then(
+  res =&gt; { console.log(res) },
+  err =&gt; { console.log(err) }
+).finally(() =&gt; { console.log('我是finally') })
+
+new Promise((resolve, reject) =&gt; {
+  reject('失败喽')
+}).then(
+  res =&gt; { console.log(res) },
+  err =&gt; { console.log(err) }
+).finally(() =&gt; { console.log('我是finally') })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="es10"><a href="#es10" class="header-anchor">#</a> ES10</h2> <h3 id="_1-array-flat"><a href="#_1-array-flat" class="header-anchor">#</a> 1.Array.flat</h3> <p>有一个二维数组，我想让他变成一维数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [1, 2, 3, [4, 5, 6]]
+
+console.log(arr.flat()) // [ 1, 2, 3, 4, 5, 6 ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>还可以传参数，参数为降维的次数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [1, 2, 3, [4, 5, 6, [7, 8, 9]]]
+
+console.log(arr.flat(2))
+[
+  1, 2, 3, 4, 5,
+  6, 7, 8, 9
+]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>如果传的是一个无限大的数字，那么就实现了多维数组(无论几维)降为一维数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [1, 2, 3, [4, 5, 6, [7, 8, 9, [10, 11, 12]]]]
+
+console.log(arr.flat(Infinity))
+[
+   1,  2, 3, 4,  5,
+   6,  7, 8, 9, 10,
+   11, 12
+]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_2-array-flatmap"><a href="#_2-array-flatmap" class="header-anchor">#</a> 2.Array.flatMap</h3> <p>现在给你一个需求</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arr = [&quot;科比 詹姆斯 安东尼&quot;, &quot;利拉德 罗斯 麦科勒姆&quot;];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>将上面数组转为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[ '科比', '詹姆斯', '安东尼', '利拉德', '罗斯', '麦科勒姆' ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>第一时间想到map + flat</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>console.log(arr.map(x =&gt; x.split(&quot; &quot;)).flat());
+// [ '科比', '詹姆斯', '安东尼', '利拉德', '罗斯', '麦科勒姆' ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>flatMap就是flat + map，一个方法顶两个</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>console.log(arr.flatMap(x =&gt; x.split(&quot; &quot;)));
+// [ '科比', '詹姆斯', '安东尼', '利拉德', '罗斯', '麦科勒姆' ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_3-biglnt"><a href="#_3-biglnt" class="header-anchor">#</a> 3.Biglnt</h3> <p>BigInt是ES10新加的一种JavaScript数据类型，用来表示表示大于 2^53 - 1 的整数，2^53 - 1是ES10之前，JavaScript所能表示最大的数字</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const theBiggestInt = 9007199254740991n;
+
+const alsoHuge = BigInt(9007199254740991);
+// 9007199254740991n
+
+const hugeString = BigInt(&quot;9007199254740991&quot;);
+// 9007199254740991n
+
+const hugeHex = BigInt(&quot;0x1fffffffffffff&quot;);
+// 9007199254740991n
+
+const hugeBin = BigInt(&quot;0b11111111111111111111111111111111111111111111111111111&quot;);
+// 9007199254740991n
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>既然是JavaScript新的数据类型，那他的typeof是啥？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const bigNum = BigInt(1728371927189372189739217)
+console.log(typeof bigNum) // bigint
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>所以以后面试官问你JavaScript有多少种数据类型，别傻傻答6种了，要答8种，把ES6的Symbol和ES10的BigInt也加上去</p> <h3 id="_4-object-fromentries"><a href="#_4-object-fromentries" class="header-anchor">#</a> 4.Object.fromEntries</h3> <p>前面ES8的Object.entries是把对象转成键值对数组，而Object.fromEntries则相反，是把键值对数组转为对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [
+  ['name', '林三心'],
+  ['age', 22],
+  ['gender', '男']
+]
+
+console.log(Object.fromEntries(arr)) // { name: '林三心', age: 22, gender: '男' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>他还有一个用处，就是把Map转为对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const map = new Map()
+map.set('name', '林三心')
+map.set('age', 22)
+map.set('gender', '男')
+
+console.log(map) // Map(3) { 'name' =&gt; '林三心', 'age' =&gt; 22, 'gender' =&gt; '男' }
+
+const obj = Object.fromEntries(map)
+console.log(obj) // { name: '林三心', age: 22, gender: '男' }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_5-string-trimstart-string-trimend"><a href="#_5-string-trimstart-string-trimend" class="header-anchor">#</a> 5.String.trimStart &amp;&amp; String.trimEnd</h3> <p>咱们都知道JavaScript有个trim方法，可以清除字符串首尾的空格</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '    林三心    '
+console.log(str.trim()) // '林三心'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>trimStart和trimEnd用来单独去除字符串的首和尾的空格</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '    林三心    '
+
+// 去除首部空格
+console.log(str.trimStart()) // '林三心   '
+// 去除尾部空格
+console.log(str.trimStart()) // '   林三心'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="es11"><a href="#es11" class="header-anchor">#</a> ES11</h2> <h3 id="_1-promise-allsettled"><a href="#_1-promise-allsettled" class="header-anchor">#</a> 1.Promise.allSettled</h3> <p>ES11新增的Promise的方法</p> <ul><li>接收一个Promise数组，数组中如有非Promise项，则此项当做成功</li> <li>把每一个Promise的结果，集合成数组，返回</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn(time, isResolve) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      isResolve ? resolve(`${time}毫秒后我成功啦！！！`) : reject(`${time}毫秒后我失败啦！！！`)
+    }, time)
+  })
+}
+
+Promise.allSettled([fn(2000, true), fn(3000), fn(1000)]).then(res =&gt; {
+  console.log(res)
+  // 3秒后输出 
+  [
+  { status: 'fulfilled', value: '2000毫秒后我成功啦！！！' },
+  { status: 'rejected', reason: '3000毫秒后我失败啦！！！' },
+  { status: 'rejected', reason: '1000毫秒后我失败啦！！！' }
+]
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_2-和-？？"><a href="#_2-和-？？" class="header-anchor">#</a> 2. ?. 和 ？？</h3> <ul><li>先说说?.，中文名为可选链</li></ul> <p>比如我们需要一个变量，是数组且有长度，才做某些操作</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const list = null
+// do something
+if (list &amp;&amp; list.length) {
+  // do something
+}
+
+// 使用可选链
+const list = null
+// do something
+if (list?.length) {
+  // do something
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>比如有一个对象，我要取一个可能不存在的值，甚至我们都不确定obj是否存在</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {
+  cat: {
+    name: '哈哈'
+  }
+}
+const dog = obj &amp;&amp; obj.dog &amp;&amp; obj.dog.name // undefined
+
+// 可选链
+const obj = {
+  cat: {
+    name: '哈哈'
+  }
+}
+const dog = obj?.dog?.name // undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>比如有一个数组，我不确定它存不存在，存在的话就取索引为1的值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = null
+// do something
+const item = arr &amp;&amp; arr[1]
+
+// 可选链
+const arr = null
+// do something
+const item = arr?.[1]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>比如有一个函数，我们不确定它存不存在，存在的话就执行它</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const fn = null
+// do something
+const res = fn &amp;&amp; fn()
+
+// 可选链
+const fn = null
+// do something
+const res = fn?.()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>再说说??，中文名为空位合并运算符</li></ul> <p>请看以下代码，咱们使用||运算符，只要左边是假值，就会返回右边的数据</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const a = 0 || '林三心' // 林三心
+const b = '' || '林三心' // 林三心
+const c = false || '林三心' // 林三心
+const d = undefined || '林三心' // 林三心
+const e = null || '林三心' // 林三心
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>而??和||最大的区别是，在??这，只有undefined和null才算假值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const a = 0 ?? '林三心' // 0
+const b = '' ?? '林三心' // ''
+const c = false ?? '林三心' // false
+const d = undefined ?? '林三心' // 林三心
+const e = null ?? '林三心' // 林三心
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="es12"><a href="#es12" class="header-anchor">#</a> ES12</h2> <h3 id="_1-promise-any"><a href="#_1-promise-any" class="header-anchor">#</a> 1.Promise.any</h3> <p>E12新增的Promise的方法</p> <ul><li><p>接收一个Promise数组，数组中如有非Promise项，则此项当做成功</p></li> <li><p>如果有一个Promise成功，则返回这个成功结果</p></li> <li><p>如果所有Promise都失败，则报错</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 当有成功的时候，返回最快那个成功
+function fn(time, isResolve) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      isResolve ? resolve(`${time}毫秒后我成功啦！！！`) : reject(`${time}毫秒后我失败啦！！！`)
+    }, time)
+  })
+}
+
+Promise.any([fn(2000, true), fn(3000), fn(1000, true)]).then(res =&gt; {
+  console.log(res) // 1秒后 输出  1000毫秒后我成功啦
+}, err =&gt; {
+  console.log(err)
+})
+
+// 当全都失败时
+function fn(time, isResolve) {
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      isResolve ? resolve(`${time}毫秒后我成功啦！！！`) : reject(`${time}毫秒后我失败啦！！！`)
+    }, time)
+  })
+}
+
+Promise.any([fn(2000), fn(3000), fn(1000)]).then(res =&gt; {
+  console.log(res)
+}, err =&gt; {
+  console.log(err) // 3秒后 报错 all Error
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h3 id="_2-数字分隔符"><a href="#_2-数字分隔符" class="header-anchor">#</a> 2.数字分隔符</h3> <p>数字分隔符可以让你在定义长数字时，更加地一目了然</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const num = 1000000000
+
+// 使用数字分隔符
+const num = 1_000_000_000
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_3-和"><a href="#_3-和" class="header-anchor">#</a> 3. ||= 和 &amp;&amp;=</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>或等于(||=)   a ||= b 等同于 a || (a = b);
+
+且等于(&amp;&amp;=)   a &amp;&amp;= b 等同于 a &amp;&amp; (a = b);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021-9-8 17:34:17</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.4c159413.js" defer></script><script src="/assets/js/3.608df269.js" defer></script><script src="/assets/js/1.13c8fc19.js" defer></script><script src="/assets/js/13.88ee9177.js" defer></script>
+  </body>
+</html>
